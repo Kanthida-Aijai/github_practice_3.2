@@ -9,7 +9,11 @@ body {
   background-color: #faf8f5;
 } 
 
-/* Navigation */
+main { 
+  min-height: 70vh; 
+  padding-bottom: 40px;
+} 
+
 nav { 
   display: flex; 
   align-items: center; 
@@ -18,7 +22,8 @@ nav {
   background-color: #ffffff;
 } 
 
-.logo, .footer-logo {
+.logo, 
+.footer-logo {
   font-size: 22px;
   font-weight: bold;
   color: #222222;
@@ -46,11 +51,6 @@ nav a.active {
   color: #d8836c;
 }
 
-main { 
-  min-height: 70vh; 
-} 
-
-/* Section Titles General Styling */
 .section-title {
   text-align: center;
   margin-bottom: 40px;
@@ -60,6 +60,12 @@ main {
   color: #d8836c;
   margin: 0 0 6px 0;
   font-size: 15px;
+}
+
+.section-title h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #111111;
 }
 
 .section-title h2 {
@@ -79,7 +85,7 @@ main {
 .hero-section {
   position: relative;
   height: 480px;
-  background-image: url('hero-bg.jpg'); /* ใส่รูปพื้นหลังห้องเสริมสวยตามดีไซน์ */
+  background-image: url('hero-bg.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -94,7 +100,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4); /* เพิ่มสีขาวจางๆ เพื่อให้อ่านข้อความง่ายขึ้น */
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .hero-content {
@@ -240,7 +246,116 @@ main {
   color: #666666;
 }
 
-/* Footer */
+.booking-section {
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+  padding: 0 20px;
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.contact-info h2, 
+.booking-form-container h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Contact Info Section */
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.icon-bg {
+  width: 40px;
+  height: 40px;
+  background-color: #fcebe6;
+  color: #d8836c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Form Section */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #444444;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #d8836c;
+}
+
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+  color: #aaaaaa;
+}
+
+.btn-submit {
+  background-color: #d8836c;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #c4725c;
+}
+
 footer { 
   background-color: #f3eee9;
   padding: 30px 20px; 
