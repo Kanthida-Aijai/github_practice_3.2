@@ -3,21 +3,122 @@
   <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home</title> 
+    <title>Bella Salon - หน้าแรก</title> 
     <link rel="stylesheet" href="style.css"> 
   </head> 
   <body> 
     <!-- Navigation --> 
     <nav> 
-      <a href="index.html">Home</a> 
-      <a href="page2.html">Page 2</a> 
+      <div class="logo">
+        <span class="logo-icon">✂</span> Bella Salon
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active">หน้าแรก</a> 
+        <a href="page2.html">ติดต่อ / จองคิว</a> 
+      </div>
     </nav> 
+
     <!-- Page Content --> 
     <main> 
-      <!-- แบ่ง Section ให้สมาชิกในทีม แล้วพัฒนาตาม Design Reference --> 
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-subtext">ยินดีต้อนรับสู่</p>
+          <h1 class="hero-title"><span class="highlight">Bella</span> Salon</h1>
+          <p class="hero-description">
+            ดูแลความงามทุกมิติ ด้วยบริการระดับพรีเมียม<br>
+            ที่จะทำให้คุณสวยจากภายในสู่ภายนอก
+          </p>
+          <a href="page2.html" class="btn-primary">จองคิวเลย</a>
+        </div>
+      </section>
+
+      <!-- Our Services Section -->
+      <section class="services-section">
+        <div class="section-title">
+          <p class="sub-title">Our Services</p>
+          <h2>บริการของเรา</h2>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: ทำผม -->
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://media.istockphoto.com/id/2223504959/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B9%8D%E0%B8%B2%E0%B8%9C%E0%B8%A1%E0%B8%A1%E0%B9%89%E0%B8%A7%E0%B8%99%E0%B8%9C%E0%B8%A1%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%AB%E0%B8%8D%E0%B8%B4%E0%B8%87%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%94%E0%B9%81%E0%B8%9A%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B0%E0%B9%83%E0%B8%81%E0%B8%A5%E0%B9%89.jpg?s=612x612&w=0&k=20&c=aWsS8QbUXZt-SC1iOCcqbd3mqfMQFCT59dH6aAgB5AQ=" alt="ทำผม">
+            </div>
+            <div class="card-content">
+              <h3>ทำผม</h3>
+              <p>ตัด ซอย ทำสี ดัด ยืด โดยช่างผมมืออาชีพ</p>
+              <p class="price">เริ่มต้น ฿500</p>
+            </div>
+          </div>
+
+          <!-- Card 2: ทำเล็บ -->
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://storage.googleapis.com/fastwork-asset/subcategory_images/th/cover/lifestyle/nail-salon.jpg" alt="ทำเล็บ">
+            </div>
+            <div class="card-content">
+              <h3>ทำเล็บ</h3>
+              <p>เพ้นท์เล็บ ต่อเล็บ เจลเล็บ ดีไซน์สุดพิเศษ</p>
+              <p class="price">เริ่มต้น ฿300</p>
+            </div>
+          </div>
+
+          <!-- Card 3: สปาผิวหน้า -->
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://inwfile.com/s-de/pbx3es.jpg" alt="สปาผิวหน้า">
+            </div>
+            <div class="card-content">
+              <h3>สปาผิวหน้า</h3>
+              <p>ทรีตเมนต์บำรุงผิวหน้า ดูแลผิวอย่างล้ำลึก</p>
+              <p class="price">เริ่มต้น ฿800</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="why-us-section">
+        <div class="section-title">
+          <p class="sub-title">Why Choose Us</p>
+          <h2>ทำไมต้องเลือกเรา</h2>
+          <p class="section-description">
+            Bella Salon คือร้านเสริมสวยที่รวมความสวยงาม ความเป็นมืออาชีพ<br>
+            และบรรยากาศสุดหรู ไว้ในที่เดียว
+          </p>
+        </div>
+
+        <div class="why-us-grid">
+          <div class="why-us-item">
+            <div class="icon-circle">❤️</div>
+            <h3>ใส่ใจทุกรายละเอียด</h3>
+            <p>เราดูแลคุณเหมือนคนพิเศษ</p>
+          </div>
+
+          <div class="why-us-item">
+            <div class="icon-circle">🏅</div>
+            <h3>ใส่ใจทุกรายละเอียด</h3>
+            <p>เราดูแลคุณเหมือนคนพิเศษ</p>
+          </div>
+
+          <div class="why-us-item">
+            <div class="icon-circle">🕒</div>
+            <h3>ใส่ใจทุกรายละเอียด</h3>
+            <p>เราดูแลคุณเหมือนคนพิเศษ</p>
+          </div>
+        </div>
+      </section>
     </main> 
+
     <!-- Footer --> 
     <footer> 
+      <div class="footer-logo">
+        <span class="logo-icon">✂</span> Bella Salon
+      </div>
+      <p>© 2026 Bella Salon. All rights reserved.</p>
     </footer> 
   </body> 
 </html>
